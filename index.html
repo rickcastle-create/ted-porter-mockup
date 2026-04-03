@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ted Porter’s BeemerShop – Mockup Recreation</title>
+  <meta name="description" content="Responsive HTML/CSS recreation of the Ted Porter’s BeemerShop homepage mockup." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Ted Porter’s BeemerShop home">
+        <span class="brand__title">BeemerShop</span>
+        <span class="brand__sub">Suspension &amp; Motorcycle Parts</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About Us</a>
+        <a href="#experts">Meet The Experts</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#products">Shop By Bike</a>
+        <a href="#service">Service Queue</a>
+        <a href="#tribute">A Tribute to John Porter</a>
+      </nav>
+
+      <div class="nav-icons" aria-label="Quick actions">
+        <a href="#" class="icon-btn" aria-label="Account">●</a>
+        <a href="#" class="icon-btn" aria-label="Search">⌕</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Premium Performance Parts</p>
+          <h1>SUSPENSION &amp;<br> MOTORCYCLE<br> PARTS</h1>
+          <p>
+            We offer state of the art, custom built motorcycle shocks from around the globe for all brands.
+          </p>
+          <a href="#products" class="btn btn--primary">Explore <span aria-hidden="true">➜</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-slider" aria-label="Shop categories">
+      <div class="container slider-shell">
+        <button class="slider-btn slider-btn--prev" data-target="category-track" aria-label="Previous categories">←</button>
+        <div class="slider-viewport">
+          <div class="category-track" id="category-track">
+            <article class="category-card">
+              <img src="assets/hero-bikes.png" alt="Motorcycle category" />
+              <h3>SHOP BY BIKE</h3>
+              <a href="#products">Shop All</a>
+            </article>
+            <article class="category-card">
+              <img src="assets/hero-bg.png" alt="Tools category" />
+              <h3>SBVTOOLS</h3>
+              <a href="#products">Shop All</a>
+            </article>
+            <article class="category-card">
+              <img src="assets/brand-logos.png" alt="Diagnostic tools category" />
+              <h3>GS-911 DIAGNOSTIC TOOL</h3>
+              <a href="#products">Shop All</a>
+            </article>
+            <article class="category-card">
+              <img src="assets/banner-left.png" alt="HEX eCAN category" />
+              <h3>HEX eCAN</h3>
+              <a href="#products">Shop All</a>
+            </article>
+            <article class="category-card">
+              <img src="assets/banner-right.png" alt="Suspension category" />
+              <h3>SUSPENSION</h3>
+              <a href="#products">Shop All</a>
+            </article>
+          </div>
+        </div>
+        <button class="slider-btn slider-btn--next" data-target="category-track" aria-label="Next categories">→</button>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="section-copy">
+          <p class="eyebrow eyebrow--blue">WHO WE ARE</p>
+          <h2>TED PORTER’S<br> BEEMER SHOP</h2>
+          <p>
+            We offer state of the art, custom built motorcycle shocks from around the globe for all brands including Aprilia, BMW, Can-Am, Ducati, Harley Davidson, Honda, Husky, Kawasaki, KTM, Moto-Guzzi, Royal Enfield, Suzuki, Triumph and Yamaha.
+          </p>
+          <p>
+            We are a USA importer and distributor for TracTive, Wilbers, TFX, Yacugar, Ikon and YSS, plus we’re an Öhlins dealer and Öhlins authorized service center.
+          </p>
+        </div>
+        <div class="about__visual">
+          <img src="assets/about-bikes.png" alt="Performance motorcycles" />
+        </div>
+      </div>
+
+      <div class="container brand-row">
+        <img src="assets/brand-logos.png" alt="Motorcycle brand logos" />
+      </div>
+    </section>
+
+    <section class="finder-wrap" aria-label="Select your motorcycle">
+      <div class="container finder">
+        <div>
+          <h3>SELECT YOUR MOTORCYCLE</h3>
+        </div>
+        <p>Over 100,000 Auto and Motorcycle Parts</p>
+        <form class="finder__form">
+          <label>
+            <span class="sr-only">Select brand</span>
+            <select>
+              <option>Select Brand</option>
+              <option>BMW</option>
+              <option>Ducati</option>
+              <option>Honda</option>
+            </select>
+          </label>
+          <label>
+            <span class="sr-only">Select make</span>
+            <select>
+              <option>Select Make</option>
+              <option>Adventure</option>
+              <option>Sport</option>
+              <option>Touring</option>
+            </select>
+          </label>
+          <label>
+            <span class="sr-only">Select model</span>
+            <select>
+              <option>Select Model</option>
+              <option>R 1250 GS</option>
+              <option>S 1000 XR</option>
+              <option>DesertX</option>
+            </select>
+          </label>
+          <label>
+            <span class="sr-only">Select year</span>
+            <select>
+              <option>Select Year</option>
+              <option>2025</option>
+              <option>2024</option>
+              <option>2023</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" type="submit">Find Parts</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="container">
+        <p class="eyebrow eyebrow--blue">PRODUCTS</p>
+        <h2 class="section-title">SHOP BY BIKE</h2>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__img"><img src="assets/product-shock.png" alt="TracTive rear shock" /></div>
+            <div class="product-card__body">
+              <h3>TracTive X-TREME-PA PRO Rear Shock | DesertX</h3>
+              <div class="stars">★★★★★ <span>(87)</span></div>
+              <div class="product-card__meta">
+                <strong>$1,595.00</strong>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card product-card--fav">
+            <div class="badge-circle">♡</div>
+            <div class="product-card__img"><img src="assets/product-shock.png" alt="TracTive rear shock" /></div>
+            <div class="product-card__body">
+              <h3>TracTive X-TREME-PA PRO Rear Shock | DesertX</h3>
+              <div class="stars">★★★★★ <span>(346)</span></div>
+              <div class="product-card__meta">
+                <strong>$1,595.00</strong>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img"><img src="assets/product-shock.png" alt="TracTive rear shock" /></div>
+            <div class="product-card__body">
+              <h3>TracTive X-TREME-PA PRO Rear Shock | DesertX</h3>
+              <div class="stars">★★★★★ <span>(68)</span></div>
+              <div class="product-card__meta">
+                <strong>$1,595.00</strong>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img"><img src="assets/product-shock.png" alt="TracTive rear shock" /></div>
+            <div class="product-card__body">
+              <h3>TracTive X-TREME-PA PRO Rear Shock | DesertX</h3>
+              <div class="stars">★★★★★ <span>(590)</span></div>
+              <div class="product-card__meta">
+                <strong>$1,595.00</strong>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card product-card--sale">
+            <div class="badge-sale">-40%</div>
+            <div class="product-card__img"><img src="assets/product-shock.png" alt="TracTive rear shock" /></div>
+            <div class="product-card__body">
+              <h3>TracTive X-TREME-PA PRO Rear Shock | DesertX</h3>
+              <div class="stars">★★★★★ <span>(177)</span></div>
+              <div class="price-stack"><span>$6,000</span><strong>$1,595.00</strong></div>
+              <div class="product-card__meta">
+                <strong></strong>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img"><img src="assets/product-shock.png" alt="TracTive rear shock" /></div>
+            <div class="product-card__body">
+              <h3>TracTive X-TREME-PA PRO Rear Shock | DesertX</h3>
+              <div class="stars">★★★★★ <span>(64)</span></div>
+              <div class="product-card__meta">
+                <strong>$1,595.00</strong>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img"><img src="assets/product-shock.png" alt="TracTive rear shock" /></div>
+            <div class="product-card__body">
+              <h3>TracTive X-TREME-PA PRO Rear Shock | DesertX</h3>
+              <div class="stars">★★★★★ <span>(880)</span></div>
+              <div class="product-card__meta">
+                <strong>$1,595.00</strong>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__img"><img src="assets/product-shock.png" alt="TracTive rear shock" /></div>
+            <div class="product-card__body">
+              <h3>TracTive X-TREME-PA PRO Rear Shock | DesertX</h3>
+              <div class="stars">★★★★★ <span>(69)</span></div>
+              <div class="product-card__meta">
+                <strong>$1,595.00</strong>
+                <button>Add to cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-strip section" id="service">
+      <div class="container promo-grid">
+        <article class="promo promo--left">
+          <div class="promo__content">
+            <h3>MOTORCYCLE<br> SUSPENSION CENTER</h3>
+            <p>Sales &amp; Service Aftermarket Upgrades Solutions for All Riders / All Brands</p>
+            <a href="#" class="btn btn--ghost">Explore Now</a>
+          </div>
+        </article>
+        <article class="promo promo--right" id="tribute">
+          <div class="promo__content">
+            <h3>BMW AIRHEAD<br> EXPERTS</h3>
+            <p>Replacement, Accessory &amp; Classic Replica Parts</p>
+            <a href="#" class="btn btn--ghost">Explore Now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured section">
+      <div class="container">
+        <h2 class="section-title section-title--left">FEATURED PRODUCTS</h2>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-card__thumb gift-card">Gift</div><h3>High-Output Alternator for Balanced Charging</h3><div class="stars">★★★★★ <span>(414)</span></div><div class="feature-card__meta"><strong>$590</strong><button>Add to cart</button></div></article>
+          <article class="feature-card"><div class="feature-card__thumb tins-card"></div><h3>Precision Fuel Injector set for High Flow rate</h3><div class="stars">★★★★★ <span>(737)</span></div><div class="feature-card__meta"><strong>$1,300</strong><button>Add to cart</button></div></article>
+          <article class="feature-card feature-card--sale"><div class="small-badge">-40%</div><div class="feature-card__thumb frame-card"></div><h3>Aluminum Core Radiator for Maximum Cooling</h3><div class="stars">★★★★★ <span>(693)</span></div><div class="feature-card__meta"><strong>$500</strong><button>Add to cart</button></div></article>
+          <article class="feature-card"><div class="feature-card__thumb oil-card"></div><h3>Complete Timing Belt kit with Water Pump</h3><div class="stars">★★★★★ <span>(102)</span></div><div class="feature-card__meta"><strong>$734</strong><button>Add to cart</button></div></article>
+          <article class="feature-card"><div class="feature-card__thumb bolts-card"></div><h3>Heavy-Duty Starter Motor for Fast Engine Crank</h3><div class="stars">★★★★★ <span>(9)</span></div><div class="feature-card__meta"><strong>$2,350</strong><button>Add to cart</button></div></article>
+          <article class="feature-card"><div class="feature-card__thumb wire-card"></div><h3>Iridium-Tipped Spark Plug for Better Ignition</h3><div class="stars">★★★★★ <span>(47)</span></div><div class="feature-card__meta"><strong>$509</strong><button>Add to cart</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">TESTIMONIALS</h2>
+        <div class="testimonial-shell">
+          <button class="slider-btn slider-btn--prev" data-target="testimonial-track" aria-label="Previous testimonials">←</button>
+          <div class="testimonial-viewport">
+            <div class="testimonial-track" id="testimonial-track">
+              <article class="testimonial-card">
+                <p>
+                  I want to thank Ted and Jeff at BeemerShop for their outstanding support in fixing the ride quality of my Wilbers suspension. Even though I purchased my suspension from a different vendor, they helped me get it right.
+                </p>
+                <span>— Dallas TX</span>
+              </article>
+              <article class="testimonial-card">
+                <p>
+                  This shop knows suspension. Turnaround was fast, communication was excellent, and my bike now feels incredibly stable and planted in corners.
+                </p>
+                <span>— Shavin, Dallas TX</span>
+              </article>
+              <article class="testimonial-card">
+                <p>
+                  From expert recommendations to after-sale support, the experience was first class. The setup feels tailored exactly to my riding style.
+                </p>
+                <span>— Andrew, CA</span>
+              </article>
+            </div>
+          </div>
+          <button class="slider-btn slider-btn--next" data-target="testimonial-track" aria-label="Next testimonials">→</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-card">
+      <div class="footer-top">
+        <a href="#top" class="brand brand--footer">
+          <span class="brand__title">BeemerShop</span>
+          <span class="brand__sub">Suspension &amp; Motorcycle Parts</span>
+        </a>
+        <nav class="footer-mini-nav" aria-label="Footer navigation">
+          <a href="#top">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#products">Shop</a>
+          <a href="#experts">Meet The Experts</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-grid" id="contact">
+        <div>
+          <h3>Support</h3>
+          <p>1506 Folsom Valley Pkwy, Suite 100<br>Roseville, CA 95661</p>
+          <p>beemershop@gmail.com</p>
+          <p>+1 831-438-1100</p>
+        </div>
+        <div>
+          <h3>Account</h3>
+          <a href="#">My Account</a>
+          <a href="#">Login / Register</a>
+          <a href="#">Cart</a>
+          <a href="#">My Wishlist</a>
+        </div>
+        <div>
+          <h3>Quick Link</h3>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+        <div>
+          <h3>Information</h3>
+          <a href="#">Community Guidelines</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Return Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <p>© Copyright 2026 BeemerShop. All Rights Reserved.</p>
+        <p>Visa · MasterCard · Amex · Discover</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
